@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Albert Sans", sans-serif;
+  background-color: white;
+  color: #333; /* Dark text for readability */
+  width: 100%;
+}
+
+/* Custom CSS to hide default swiper arrows using Tailwind */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none !important;
+}
+
+.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden.w-full{
+  padding-bottom: 20px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: 33% !important;
+  border-radius: 100% !important;
+  width: 44px !important;
+  height: 44px !important;
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-button-disabled {
+  color: #000 !important;
+  background-color: #fff !important;
+  opacity: 1 !important;
+}
+.swiper-button-disabled svg{
+  color: #000 !important;
+}
+
+
+
+.swiper-button-prev svg, .swiper-button-next svg {
+  width: 50% !important;
+  height: 50% !important;
+}
