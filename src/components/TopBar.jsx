@@ -85,7 +85,7 @@ const TopBar = () => {
 
       {/* Mobile Menu (hidden by default, shown when hamburger is clicked) */}
       <div 
-        className={`w-full md:hidden bg-[#F8F8F6] text-white px-6 py-4 fixed top-[40] right-0 w-64 h-full transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        className={`w-full md:hidden bg-[#F8F8F6] text-white px-6 py-4 fixed top-0 right-0 w-64 h-full transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
         style={{ zIndex: 1000 }}
       >
         {/* Close Button (X) */}
