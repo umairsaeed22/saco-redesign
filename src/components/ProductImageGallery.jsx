@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Heart } from "lucide-react"; // Import Heart Icon
-import HeaderImage from "../assets/header.png";
+import HeaderImage from "../assets/Header.png";
 import ChildOne from "../assets/childOne.png";
 import ChildTwo from "../assets/childTwo.png";
 
